@@ -1,0 +1,1 @@
+document.querySelector('.header-page').style.height = `${window.innerHeight}px`;

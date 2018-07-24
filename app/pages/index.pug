@@ -2,7 +2,7 @@ doctype html
 html
     head
         meta(charset="utf-8")
-        title Title
+        title AgriPlus site
         meta(http-equiv="X-UA-Compatible" content="IE = edge")
         meta(name="viewport" content="width=device-width,initial-scale=1")
         meta(name="keywords" content="")
@@ -26,7 +26,18 @@ html
         meta(name="theme-color" content="#ffffff")
 
     body
-       
+        div
+        header.header-page(style="background-image: url(img/header/background.jpg)")
+            .header__wrapper
+                .logo.header__logo(style="background-image: url(img/logo.png)")
+                    a.logo__link(href="index.html" alt="AgriPlus company")
+                .promo.header__promo
+                    p.promo__welcome-text WELCOME TO
+                    h1.promo__title AGRIEXPO 2018
+                    p.promo__sub-title INT'L EXHIBITION FOR AGRICULTURAL PRODUCTS AND SERVICES
+                    p.promo__text Doliuyas aboriosam nisiut aliquiea commodi consequis autem vel eum iure reprehenderit
+                    a.button.promo__button(href="#") Join now
+        
 
 
         script(src="js/jquery.min.js")
