@@ -49,6 +49,12 @@ body
   font-weight: normal
   margin-bottom: 10px
 
+.section__title_center
+  text-align: center
+
+.section__sub-title_center
+  text-align: center
+
 .section__sub-title
   color: $sub-title-color
   font-size: 22px
@@ -63,13 +69,16 @@ body
 .section__wrapper
   height: 100%
   width: 100%
-  display: flex
-  justify-content: space-around
-  flex-wrap: wrap
+
+.section__wrapper_flex
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
 
 
 @import "pages/index"
 @import "pages/section-about"
 @import "pages/section-events"
 @import "pages/section-gallery"
+@import "pages/section-products"
 @import "helpers/media"

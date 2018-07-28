@@ -40,7 +40,7 @@ html
 
         main.main-page
             section.section.section-about
-                .section__wrapper.container
+                .section__wrapper_flex.container
                     .section__photo
                         img.section__image(src="img/section-about/image-1.jpg", alt="About image")
                     .section__info
@@ -50,7 +50,7 @@ html
                             | Kitaesaert tasetruse aplirde neafaese mikertyu eraneo. Nsatole rnatur aut oditaut miertase vertas. Ceasnseq usauntur magni doloresi eo qui ratione voluptate msequi nesciuque porro quisqu ameo slomas felerereta brease kuytras malorem ipsum, quiadesa dolores. Besit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam.
             
             section.section.section-events
-                .section__wrapper.container
+                .section__wrapper_flex.container
                     .section__photo.section-events__photo
                         img.section__image(src="img/section-events/image-1.jpg", alt="Events image")
                     .section__info.section-events__info
@@ -83,7 +83,42 @@ html
                                 img.thumbnail__image(src="img/section-gallery/image_thumb-6.jpg", alt="biotechnology" data-sub="world-class research advancements")
                             div.thumbnail__item
                                 img.thumbnail__image(src="img/section-gallery/image_thumb-7.jpg", alt="irrigation" data-sub="water technologies for agricultur")
-                        
+
+            section.section.section-products
+                .section__wrapper.container
+                    h2.section__title.section__title_white.section__title_center popular products
+                    h3.section__sub-title.section__sub-.section__sub-title_center 
+                        | learn more about the products offered by the participants of agriplus
+                    .product__wrapper
+                        .product__item
+                            .product__photo(style="background-image: url(img/section-products/image-1.jpg)")
+                            .product__info
+                                .product__name grapes
+                                .product__description
+                                    | Kitaesaert tasetruse apreler icaserde neafaese mikeryusa eraneo. Nsatolernatur auts oditaut miertase vertas.
+                                a(href="#").product__link
+                        .product__item
+                            .product__photo(style="background-image: url(img/section-products/image-2.jpg)")
+                            .product__info
+                                .product__name watermelon
+                                .product__description
+                                    | Nsatolernatur auts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus ratione voluptate.
+                                a(href="#").product__link
+                        .product__item
+                            .product__photo(style="background-image: url(img/section-products/image-3.jpg)")
+                            .product__info
+                                .product__name bananas
+                                .product__description
+                                    | Voluptate equi nesciuque porro quise ameras dolomas felerereta ease kuytras mias sertqui dolorem ipsum.
+                                a(href="#").product__link
+                        .product__item
+                            .product__photo(style="background-image: url(img/section-products/image-4.jpg)")
+                            .product__info
+                                .product__name apples
+                                .product__description
+                                    | Measnseq usauntur magni dolores eoqui ratione oluptate msequi nesciuq porro uisqu ameras dolomas feletas.
+                                a(href="#").product__link
+                            
                 
                 
     

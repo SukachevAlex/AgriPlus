@@ -1,0 +1,57 @@
+.section__title_white
+    color: #fff
+
+.section__sub-title_white
+    color: #fff
+
+.section-products
+    background-color: #1c1c1c
+    padding: 70px 0 100px
+
+.product__wrapper
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 30px
+
+.product__item
+    background-color: #fff
+    display: flex
+    flex-wrap: wrap
+
+.product__photo
+    width: 50%
+    height: auto
+
+.product__info
+    width: 50%
+    padding: 60px 25px 20px 40px
+
+.product__name
+    color: #414141
+    font-size: 24px
+    line-height: 30px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 17px
+
+.product__description
+    color: #7f7f7f
+    font-size: 16px
+    line-height: 23px
+    font-family: $text-font
+    margin-bottom: 40px
+
+.product__link
+    float: right
+    &::before
+        content: ''
+        display: block
+        width: 22px
+        height: 22px
+        background-image: url(../img/svg/right-arrow-in-a-circle.svg)
+        background-size: 100%
+        opacity: 0.5
+        transition: all 0.5s ease
+    &:hover
+        &::before
+            opacity: 0.9
