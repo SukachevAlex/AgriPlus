@@ -44,8 +44,8 @@ html
                     .section__photo
                         img.section__image(src="img/section-about/image-1.jpg", alt="About image")
                     .section__info
-                        h2.section__title about exhibition
-                        p.section__sub-title showcasing the latest achievements in agriculture
+                        h2.section__title.section__title_left.section__title_yellow about exhibition
+                        p.section__sub-title.section__sub-title_left showcasing the latest achievements in agriculture
                         p.section__description
                             | Kitaesaert tasetruse aplirde neafaese mikertyu eraneo. Nsatole rnatur aut oditaut miertase vertas. Ceasnseq usauntur magni doloresi eo qui ratione voluptate msequi nesciuque porro quisqu ameo slomas felerereta brease kuytras malorem ipsum, quiadesa dolores. Besit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam.
             
@@ -54,8 +54,8 @@ html
                     .section__photo.section-events__photo
                         img.section__image(src="img/section-events/image-1.jpg", alt="Events image")
                     .section__info.section-events__info
-                        h2.section__title latest event information
-                        p.section__sub-title a place where agricultural experts meet and share their opinions
+                        h2.section__title.section__title_right.section__title_yellow latest event information
+                        p.section__sub-title.section__sub-title_right a place where agricultural experts meet and share their opinions
                         p.section__description
                             | Lemikertyu eraneomieras. Kitaesaert tasetruse aplirde neafaes dolas satole rnatur aut oditaut miertase vertas. Ceasnseq usauntur magni doloresi que porro quisqu ameo slomas felerereta breo qui ratione voluptate msequi nesciuea rtuytasotytas quiadesa dolore se kuytras malorem. Asersit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.
             
@@ -86,8 +86,8 @@ html
 
             section.section.section-products
                 .section__wrapper.container
-                    h2.section__title.section__title_white.section__title_center popular products
-                    h3.section__sub-title.section__sub-title_uppercase.section__sub-title_center 
+                    h2.section__title popular products
+                    h3.section__sub-title 
                         | learn more about the products offered by the participants of agriplus
                     .product__wrapper
                         .product__item
@@ -121,8 +121,8 @@ html
             
             section.section.section-advantages(style="background-image: url(img/section-advantages/background.jpg)")
                 .section__wrapper.container
-                    h2.section__title.section__title_white.section__title_center our advantages
-                    h3.section__sub-title.section-sub-title_yellow.section__sub-title_center a few reasons why you should attend our exhibition
+                    h2.section__title our advantages
+                    h3.section__sub-title.section__sub-title_yellow a few reasons why you should attend our exhibition
                     .features
                         .features__item
                             h4.feature__title meet industry leaders
@@ -137,8 +137,14 @@ html
                             p.feature__description 
                                 | leasnseq usauntur magnilores eo quide ratione voluptate msequi nesciuque porros bdygfas sease kuytras masertqui dolorem ipsum, quiade samertas delouytas belolores.    
             
-                
-            
+            section.section.section-subscribe(style="background-image: url(img/section-subscribe/background.jpg)")
+                .section.wrapper.container
+                    h2.section__title stay in touch
+                    h3.section__sub-title.section__sub-title_white be the first to get updates
+                    form.subscribe-form(action="/" method="post")
+                        input.subscribe-form__input(type="text" name="name" placeholder="Enter name" autocomplete="off" required)
+                        input.subscribe-form__input(type="text" name="email" placeholder="Enter name" autocomplete="off" required)
+                        button.subscribe-form__button(type="submit") Subscribe now
     
 
         script(src="js/jquery.min.js")
