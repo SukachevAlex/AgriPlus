@@ -145,8 +145,25 @@ html
                         input.subscribe-form__input(type="text" name="name" placeholder="Enter name" autocomplete="off" required)
                         input.subscribe-form__input(type="text" name="email" placeholder="Enter name" autocomplete="off" required)
                         button.subscribe-form__button(type="submit") Subscribe now
-    
+
+        footer.footer-page
+            .footer__wrapper.container
+                h3.footer__title Contacts
+                .social.footer__social
+                    a.social__item.social__item_twitter(href="#")
+                    a.social__item.social__item_facebook(href="#")
+                    a.social__item.social__item_google(href="#")
+                    a.social__item.social__item_rss(href="#")
+                    a.social__item.social__item_pinterest(href="#")
+                .address.footer__address
+                    | 28 jackson blvd ste 1020 chicago
+                    br
+                    IL 60604-2340
+                .copyright.footer__copyright
+                    | © 2018 agriplus. all rights reserved
+            .footer__map#footer__map
 
         script(src="js/jquery.min.js")
         script(src="js/libs.min.js")
         script(src="js/main.js")
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")

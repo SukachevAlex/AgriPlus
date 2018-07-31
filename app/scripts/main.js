@@ -11,8 +11,26 @@ const handleClick = (e) => {
     gallerySubTitle.innerHTML = element.dataset.sub;
 }
 
+function init() {
+    // Создание карты.    
+    var myMap = new ymaps.Map("footer__map", {
+            center: [41.877786, -87.656995],
+            zoom: 15,
+            controls: []
+        }, {
+            suppressMapOpenBlock: true
+        }),
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {});
+
+    myMap.geoObjects
+        .add(myPlacemark);
+}
+
 window.onload = function() {
     let thumbs = document.querySelectorAll('.thumbnail__item');
     thumbs.forEach(el => el.addEventListener('click', handleClick));
+
+    ymaps.ready(init);
+
 
 };
