@@ -98,6 +98,26 @@ body
   margin-right: auto
   margin-left: auto
 
+.button__navigate
+  opacity: 0
+  width: 70px
+  height: 70px
+  position: fixed
+  bottom: 180px
+  right: 66px
+  border-radius: 50%
+  z-index: 5
+  background-color: #fff
+  border: 2px solid transparent
+  background-repeat: no-repeat
+  background-image: url(../img/svg/arrow-up-icon.svg)
+  background-size: 40%
+  background-position: center
+  transition: all 0.75s ease
+  cursor: pointer
+  box-sizing: border-box
+  &:hover
+    border: 2px solid $main-color
 
 @import "pages/header"
 @import "pages/section-about"
