@@ -31,14 +31,13 @@ function init() {
 
 function scroll() {
     if (document.documentElement.scrollTop > window.innerHeight / 2) {
-        navigateButton.style.opacity = 1
+        navigateButton.style.opacity = 1;
     } else {
         navigateButton.style.opacity = 0;
     }
 }
 
 function navigateTop() {
-    // document.documentElement.scrollTop = 0;
     if (document.documentElement.scrollTop > 0) {
         window.scrollBy(0, -100);
         t = setTimeout('navigateTop()', 25);

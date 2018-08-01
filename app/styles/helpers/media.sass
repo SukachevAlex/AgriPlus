@@ -1,7 +1,8 @@
 @import "vars"
 
 @media only screen and (max-width : 1200px)
-  /**/
+  .product__wrapper
+    overflow: hidden //temp
 
 @media only screen and (max-width : 992px)
   .header__wrapper
@@ -11,7 +12,19 @@
   /**/
 
 @media only screen and (max-width : 480px)
-  /**/
+  .header-page
+    height: 100% !important
+  .header__logo 
+    margin: 0 auto 40px
+  .header__wrapper 
+    padding-bottom: 25px
+  .promo__title, .promo__welcome-text
+    margin-bottom: 25px
 
 @media only screen and (max-width : 320px)
-  /**/
+  
+  .promo__title
+    font-size: 60px
+    line-height: 70px
+  .promo__title, .promo__welcome-text
+    margin-bottom: 25px
